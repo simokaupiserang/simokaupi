@@ -1,0 +1,32 @@
+<?php
+
+header("Content-Type: application/json");
+
+include "../config/database.php";
+
+$sql=
+"
+SELECT *
+FROM firmware_versions
+ORDER BY id DESC
+LIMIT 1
+";
+
+$result=
+mysqli_query(
+$conn,
+$sql
+);
+
+$data=
+mysqli_fetch_assoc(
+$result
+);
+
+$data['url']=
+"http://  /simoka/firmware/".
+$data['filename'];
+
+echo json_encode(
+$data
+);
