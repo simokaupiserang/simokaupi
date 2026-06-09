@@ -1,0 +1,55 @@
+body{
+    background:#f4f6f9;
+}
+
+.navbar-brand{
+    font-weight:bold;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+.card-body{
+    text-align:center;
+}
+
+h2{
+    font-weight:bold;
+}
+
+canvas{
+    min-height:250px;
+}
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:250px;
+    height:100%;
+    background:#0d6efd;
+    padding-top:20px;
+}
+
+.sidebar h3{
+    color:white;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+.main-content{
+    margin-left:260px;
+    padding:20px;
+}
